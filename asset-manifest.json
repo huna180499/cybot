@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cybot/static/css/main.2fe13ac8.css",
-    "main.js": "/cybot/static/js/main.3d155c82.js",
+    "main.js": "/cybot/static/js/main.814cabe7.js",
     "static/media/olaf-farm.mp4": "/cybot/static/media/olaf-farm.dad79eb0e756901bac9f.mp4",
     "static/media/ashe-farm.mp4": "/cybot/static/media/ashe-farm.d2c2d4ca628cc8b65ca6.mp4",
     "static/media/background_vayne.webp": "/cybot/static/media/background_vayne.2ca74b758eb2a16e7807.webp",
@@ -179,10 +179,10 @@
     "static/media/damage.webp": "/cybot/static/media/damage.513cfc9b1038f173eef4.webp",
     "index.html": "/cybot/index.html",
     "main.2fe13ac8.css.map": "/cybot/static/css/main.2fe13ac8.css.map",
-    "main.3d155c82.js.map": "/cybot/static/js/main.3d155c82.js.map"
+    "main.814cabe7.js.map": "/cybot/static/js/main.814cabe7.js.map"
   },
   "entrypoints": [
     "static/css/main.2fe13ac8.css",
-    "static/js/main.3d155c82.js"
+    "static/js/main.814cabe7.js"
   ]
 }
