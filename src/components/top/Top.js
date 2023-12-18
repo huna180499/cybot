@@ -13,10 +13,10 @@ export default function Top() {
   }
   return (
     <div className={isMobile ? 'top' :'top no-responsive'}>
-        {isMobile ? (<div>  <div className='top-btn' onClick={menuBtn}><img src={cybot} /></div>
+        {isMobile ? (<> <div className='top-btn' onClick={menuBtn}><img src={cybot} /></div>
         <div className='top-btn'><img src={LOL} /></div>
         <div className='top-btn'> </div>
-        <div className='menu'></div></div>) : (
+        <div className='menu'></div></>) : (
         <div></div>
         )}
       
