@@ -1,0 +1,107 @@
+.sort-btn {
+    width: 95%;
+    margin: 20px auto 0 auto;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    .sort-title {
+        width: 35%;
+        border-bottom: solid 2px  rgb(51, 118, 173);
+        justify-content: space-between;
+        &.ok {background-color: aqua;}
+    }
+    .sort-by-lane {
+        width: 65%;
+        justify-content: center; 
+        display: flex;
+        .lane {
+            width: calc(16%);
+            height: 100%;
+            border: solid 2px rgba(75, 108, 137, 0.491);
+            border-bottom: solid 2px rgb(51, 118, 173);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgba(179, 179, 179, 0.63);
+            
+            &.sorting {
+                color: rgb(215, 215, 167);
+                border: solid 4px rgb(51, 118, 173);
+                height: 34px;
+                margin-top: -4px;
+                border-bottom: unset;
+                width: 20%;
+                background-color: rgba(0, 0, 0, 0.58);
+            }
+        }
+    }
+}
+
+.list-champ {
+    width: 96%;
+    height: 380px;
+    overflow: auto;
+    margin: auto;
+    background-color: black;
+    border: solid 4px rgb(51, 118, 173) ;
+    border-top: unset;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 7px;
+    padding: 5px;
+    .grid-item {
+        width: 80px;
+        height: 80px ;
+        border: solid 1px rgba(128, 128, 128, 0.565);
+        overflow: hidden;
+        position: relative;
+        .item-bot {
+            height: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.375);
+            .mini-stat {
+                height: 10px;
+                display: flex;
+                div {
+                    width: 33.33%;
+                    color: white;
+                    font-size: 11px;
+                    text-align: center;
+                    padding: 0;
+                    img {width: 8px; height: 8px;}
+                }
+            }
+            
+        }
+        img {
+            height: 150%;
+            width: 150%;
+            margin-left: -25%;
+            object-fit: cover;
+        }
+        .picked-text {
+            position: absolute;
+            top: 25%;
+            left: 0;
+            width: 100%;
+            color: rgb(201, 78, 96);
+            font-weight: bolder;
+            margin: 0;
+            font-size: 16px;
+            display: none;
+        }
+        &.picked {
+            img{
+                filter: blur(3px);
+            }
+            .mini-stat {img {filter: unset;}}
+            .picked-text {display: unset;}
+        }
+    }
+}

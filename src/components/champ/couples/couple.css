@@ -1,0 +1,61 @@
+#box {
+  position: relative;
+  width: 65px;
+  height: 20px;
+  background-color: rgb(225, 225, 225);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  margin: 2px auto;
+  font-size: 10px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+}
+#box .box-detail {
+  position: absolute;
+  bottom: -70px;
+  left: -75%;
+  width: 250%;
+  height: 70px;
+  background-color: black;
+  border: solid 1px rgb(192, 185, 185);
+  display: none;
+}
+#box .box-detail.opening {
+  display: unset;
+}
+#box .box-detail .detail-bonus {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 10px;
+}
+#box .box-detail .detail-bonus .de-img {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#box .box-detail .detail-bonus .de-img img {
+  width: 100%;
+  height: 60%;
+  border: solid 1px white;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#box .box-detail .detail-bonus .de {
+  color: white;
+  font-size: 14px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#box .box-detail .detail-bonus .de img {
+  width: 20px;
+  height: 20px;
+}
+#box .box-detail .detail-bonus .bonus-stats {
+  border: unset !important;
+}/*# sourceMappingURL=couple.css.map */

@@ -1,0 +1,38 @@
+.stat-rating {
+  width: auto;
+  height: 20px;
+  display: flex;
+  margin: 5px auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.stat-rating .stat-title {
+  width: 40px;
+  color: white;
+}
+.stat-rating .rate {
+  height: 100%;
+  background-color: rgba(36, 92, 101, 0.777);
+  border-radius: 3px;
+  transform: skewX(-20deg);
+  display: flex;
+}
+.stat-rating .rate .point-1 {
+  height: 100%;
+  width: 15px;
+  border: solid 1px rgb(86, 86, 90);
+  background-color: rgb(70, 226, 250);
+}
+.stat-rating .rate .point-1.is-being {
+  animation: being 2s infinite;
+}
+@keyframes being {
+  0% {
+    background-color: rgb(70, 226, 250);
+  }
+  50% {
+    background-color: rgb(31, 108, 119);
+  }
+  100% {
+    background-color: rgb(70, 226, 250);
+  }
+}/*# sourceMappingURL=Rate.css.map */

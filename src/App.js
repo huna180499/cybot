@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { Home } from './pages/page-champ/Champs';
+import Champs from './pages/page-champ/Champs';
+import TeamLine from './pages/page-team/TeamLine';
+import Training from './pages/page-train/Training';
+
 
 function App() {
+  const [page, setPage] = useState(0);
+
+  const goToPage = (event) => {setPage(event.currentTarget.id)}
+
+  const dsPage = [<Home func={goToPage} />,<Champs />, <TeamLine /> ,<Training/>]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='btn-home' onClick={() => setPage(0)}><i className="fa fa-home"></i></div>
+      {dsPage[page]}
     </div>
   );
 }

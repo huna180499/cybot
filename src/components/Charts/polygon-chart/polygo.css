@@ -1,0 +1,34 @@
+.team-canvas {
+  position: relative;
+  margin: auto;
+}
+.team-canvas #cvas {
+  margin: auto;
+}
+.team-canvas .can {
+  position: absolute;
+}
+.team-canvas .can.a {
+  top: -15%;
+  left: 20%;
+}
+.team-canvas .can.b {
+  top: -15%;
+  right: 20%;
+}
+.team-canvas .can.c {
+  top: 43%;
+  right: 0;
+}
+.team-canvas .can.d {
+  bottom: -15%;
+  right: 20%;
+}
+.team-canvas .can.e {
+  bottom: -15%;
+  left: 20%;
+}
+.team-canvas .can.f {
+  top: 43%;
+  left: 0;
+}/*# sourceMappingURL=polygo.css.map */

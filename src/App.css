@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    background-image: url('./image/background/background_vayne.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed; 
+    height: 100%; 
   }
-  to {
-    transform: rotate(360deg);
+
+  
+  .btn-home {
+    position: absolute;
+    right: 20px;
+    margin-top: -60px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(51, 118, 173);
+    border-radius: 20px;
+    border: solid 2px rgb(209, 207, 207);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    z-index: 10;
   }
-}
+  
+  .home-page {
+    padding: 100px 30px 300px 30px;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    background-color: rgba(0, 0, 0, 0.458);
+  }
+  .home-page h1 {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  .home-page .option {
+    width: 60%;
+    margin: 20px 20%;
+    height: 40px;
+    background-color: rgb(51, 118, 173);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border: solid 2px rgb(209, 207, 207);
+  }
+  .home-page.no-responsive {
+    font-size: 35px;
+    background-color: unset;
+    padding-top: 20%;
+  }
