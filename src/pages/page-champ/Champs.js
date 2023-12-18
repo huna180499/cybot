@@ -14,7 +14,9 @@ export const Home = (props) => {
       <div id='3' className='option' onClick={props.func}>T R A N N I N G</div></div> ) : (
         <div className='no-responsive'> 
         Không hỗ trợ thiết bị này. 
-        Hãy chuyển sang chế độ hiển thị kích thước màn hình của iPhone và tải lại trang để có trải nghiệm tốt nhất.
+        Hãy chuyển sang chế độ hiển thị màn hình của iPhone và tải lại trang để có trải nghiệm tốt nhất.
+        <br></br> <br></br>
+        Chuyển chế độ bằng cách: Click chuột phải lên màn hình -&gt; Chọn Inspect (Kiểm tra) -&gt;Ở dưới thanh đường dẫn web -&gt; Dimension -&gt; Chọn iPhone SE.
         </div>
       )
     }
